@@ -57,11 +57,12 @@ export default function Page() {
   }
 
   function handleConfirmSend() {
-    const text = encodeURIComponent(previewMsg);
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
-    window.open(url, "_blank", "noopener,noreferrer");
-    setConfirmOpen(false);
-  }
+  const msgPreview = `${name.trim()} - total de: ${parsedQty} pessoa(s)`;
+  const text = encodeURIComponent(msg);
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+  setConfirmOpen(false);
+}
 
   return (
     <main className="min-h-screen relative overflow-hidden">
