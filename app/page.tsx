@@ -57,7 +57,7 @@ export default function Page() {
   }
 
   function handleConfirmSend() {
-  const msgPreview = `${name.trim()} - total de: ${parsedQty} pessoa(s)`;
+  const msg = `${name.trim()} - total de: ${parsedQty} pessoa(s)`;
   const text = encodeURIComponent(msg);
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
   window.open(url, "_blank", "noopener,noreferrer");
