@@ -17,7 +17,7 @@ function formatWhatsAppPhoneBR(phone: string) {
 export default function Page() {
   // ✅ TROQUE AQUI PELO NÚMERO QUE RECEBERÁ AS CONFIRMAÇÕES (com DDD)
   // Ex.: Campo Grande: "67999999999"
-  const WHATSAPP_NUMBER_RAW = "67992699299";
+  const WHATSAPP_NUMBER_RAW = "5567991682639";
 
   const WHATSAPP_NUMBER = useMemo(
     () => formatWhatsAppPhoneBR(WHATSAPP_NUMBER_RAW),
